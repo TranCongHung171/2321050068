@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thông Tin Sinh Viên</title>
+  </head>
+  <body>
+    <h2 align="center">THÔNG TIN SINH VIÊN</h2>
+
+    <table
+      border="1"
+      cellpadding="8"
+      cellspacing="0"
+      width="50%"
+      align="center"
+    >
+      <tr>
+        <td width="30%">Họ và tên</td>
+        <td><input type="text" size="30" /></td>
+      </tr>
+      <tr>
+        <td width="30%">Ngày sinh</td>
+        <td><input type="date" /></td>
+      </tr>
+      <tr>
+        <td width="30%">Giới tính</td>
+        <td>
+          <input type="radio" name="gioitinh" value="nam" /> Nam
+          <input type="radio" name="gioitinh" value="nu" /> Nữ
+        </td>
+      </tr>
+      <tr>
+        <td width="30%">Lớp</td>
+        <td><input type="text" size="20" /></td>
+      </tr>
+      <tr>
+        <td width="30%">Thông tin địa chỉ</td>
+        <td><textarea rows="4" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td width="30%">Thông tin liên lạc</td>
+        <td>
+          Số điện thoại: <input type="tel" size="15" /><br />
+          Email: <input type="email" size="30" />
+        </td>
+      </tr>
+    </table>
+
+    <p align="center">
+      <marquee behavior="scroll" direction="left" scrollamount="4">
+        <font color="red">
+          <i>Ghi chú: Sinh viên điền thông tin thật của mình</i>
+        </font>
+      </marquee>
+    </p>
+  </body>
+</html>
