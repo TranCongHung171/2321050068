@@ -6,8 +6,43 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Ngày 14/08/2025</h1>
-    <h2>Hôm nay trời nắng</h2>
-    <h3>@@@@@</h3>
+    	<!-- bảng -->
+		<table border="1"> <!-- định nghĩa bảng/ muốn tăng độ đậm cho viền thì tăng số-->
+			<!-- tiêu đề bảng-->
+			<caption> Bảng thông tin sinh viên </caption>
+			<!-- hàng 1-->
+			<tr> <!-- định nghĩa hàng-->
+				<th> STT </th> <!-- tiêu đề của cột cần in đậm -->
+				<th colspan="2"> Họ và tên </th>
+				<th> MSSV </th>
+				<th> Lớp </th>
+			</tr> 
+			<!-- hàng 2-->
+			<tr>
+				<td> 1 </td> <!-- dữ liệu trong từng cột or hàng không cần in đậm-->
+				<td> Đỗ Quang </th>
+				<td> Huy </td>
+				<td> 232105001 </td>
+				<td rowspan="2"> CNTT K68A </td>
+			</tr>
+			<!-- hàng 3-->
+			<tr>
+				<td> 2 </td>
+				<td> Phạm Đan </td>
+				<td> Trường </td>
+				<td> 232105010</td>
+	
+			</tr>
+			<!-- hàng 4-->
+			<tr>
+				<td> 3 </td>
+				<td> Lê Thị Cẩm </td> 
+				<td> Tú</td>
+				<td> 232105008</td>
+				<td> CNTT K68B</td>
+			</tr>
+			<td></td> <!-- định nghĩa cột-->
+			<!-- nếu dữ liệu 2 or nhiều hàng giống nhau thì gộp chúng lại: dùng <td rowspan=""-->
+		</table>
   </body>
 </html>
