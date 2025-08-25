@@ -1,0 +1,29 @@
+h1 {
+  background-color: darkgray;
+}
+h2 {
+  color: darkblue;
+}
+.box1 {
+  color: brown;
+  background-color: lightgray;
+}
+.box2 {
+  color: white;
+  background-color: black;
+  /* 1 giá trị(cách xq = giá trị đó)
+    2 giá trị: giá trị đầu ( trên dưới), gtri 2 là trái phải)
+    4 gtri: cách trên > phải> dưới> trái*/
+  margin: 50px 10px 100px 30px;
+  /*
+  width: 50%
+  margin: auto;   auto: căn khối ra giữa*/
+  width: 50%
+  margin: auto;
+
+    padding: 100px; /* cho khối to ra */
+}
+.box3 {
+  color: orange;
+  background-color: purple;
+}
