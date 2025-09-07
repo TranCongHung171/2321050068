@@ -53,6 +53,7 @@ header {
   font-family: Arial;
   border-bottom: 3px solid #0f75bc;
 }
+
 .tieude1 {
   text-decoration: none;
 }
@@ -97,6 +98,28 @@ header {
   gap: 20px;
   justify-content: center; /**/
   margin: 10px 0px;
+}
+.lk {
+  border: #a29f9f 1px solid;
+  width: 20%;
+  margin: 0 auto;
+}
+.lk2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+.lk2 {
+  border: #a29f9f 1px solid;
+  width: 100%;
+  margin: 0 auto;
+}
+.lk3 {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-align: center;
 }
 
 .thongbao {
@@ -146,10 +169,21 @@ header {
   margin: 0 auto;
 }
 
-.doitac {
+.doitacimg {
   width: 100%; /* Chiếm toàn bộ chiều rộng của khung cha */
   justify-content: center;
-  margin: 10px 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.doitacimg img {
+  margin: 0px 50px 0px 0px;
+  border-top: #a29f9f 1px solid;
+  border-left: #a29f9f 1px solid;
+  border-right: #a29f9f 1px solid;
+  width: 90%;
+  padding: 10px;
+  height: auto;
 }
 
 .nenden {
@@ -167,7 +201,6 @@ header {
 footer {
   background-color: #0c4ca3;
   color: white;
-  text-align: center;
   padding: 10px;
   font-size: 14px;
   font-family: Roboto, Arial, Tahoma;
@@ -181,4 +214,17 @@ footer {
   float: right;
   margin-bottom: 0;
   /* Loại bỏ khoảng cách dưới cùng */
+}
+.footer-content {
+  display: flex;
+}
+.map {
+  width: 1500px;
+}
+.map a {
+  text-decoration: none;
+  color: white;
+}
+.footer-a {
+  display: flex;
 }
