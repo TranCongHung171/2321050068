@@ -1,0 +1,37 @@
+.dautrang {
+  background-color: black;
+  height: 40px;
+  display: flex;
+}
+.thantrang {
+  background-color: black;
+  display: flex;
+
+  color: white;
+}
+.than1 {
+  width: 20%;
+  height: 800px;
+  background-color: rgb(73, 72, 70);
+  margin-right: 10px;
+  border: black solid 1px;
+}
+.than2 {
+  width: 50%;
+  height: 800px;
+  background-color: rgb(73, 72, 70);
+  margin-right: 10px;
+}
+.than3 {
+  width: 30%;
+  height: 800px;
+  background-color: rgb(73, 72, 70);
+}
+.tieude1 {
+  display: flex;
+  gap: 15px;
+}
+.search {
+  justify-content: center;
+  text-align: center;
+}
