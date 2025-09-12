@@ -1,12 +1,26 @@
-.dautrang {
+body {
+  margin: 0;
   background-color: black;
-  height: 40px;
-  display: flex;
 }
-.thantrang {
-  background-color: black;
+.dautrang {
+  height: 50px;
   display: flex;
+  color: white;
+}
 
+.search {
+  text-align: center;
+  border-radius: 100px;
+  width: 10%;
+  padding: 3px;
+  color: aliceblue;
+  background-color: white;
+  margin: auto;
+  border: none;
+}
+
+.thantrang {
+  display: flex;
   color: white;
 }
 .than1 {
@@ -14,24 +28,157 @@
   height: 800px;
   background-color: rgb(73, 72, 70);
   margin-right: 10px;
-  border: black solid 1px;
+  border-radius: 15px;
+  overflow: scroll;
+  scrollbar-width: none;
 }
+.chuthan1 {
+  margin-left: 15px;
+  gap: 150px;
+  display: flex;
+}
+.boxthan1 {
+  display: flex;
+  margin: 5px 0px 5px 30px;
+
+  background-color: rgb(122, 118, 118);
+}
+.boxthan1 img {
+  width: 20%;
+  height: 100%;
+}
+.chubox {
+  text-align: center;
+  margin-left: 15px;
+}
+
+.create {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(122, 118, 118);
+}
+.chu2than1 {
+  gap: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .than2 {
   width: 50%;
   height: 800px;
   background-color: rgb(73, 72, 70);
   margin-right: 10px;
+  border-radius: 15px;
+  overflow: scroll;
+  scrollbar-width: none;
 }
+.chuthan2 {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  margin-left: 25px;
+}
+.chu21 {
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+.chu22 {
+  border-radius: 10px;
+  background-color: rgb(122, 118, 118);
+  color: white;
+  padding: 5px;
+}
+.boxto {
+  margin: 0px 30px 0px 30px;
+}
+.boxthan2 {
+  display: flex;
+  margin: 10px 0px 10px 0px;
+}
+.box {
+  display: flex;
+  background-color: rgb(122, 118, 118);
+  margin: 0px 5px 0px 5px;
+}
+.box img {
+  height: 100%;
+  width: 30%;
+}
+.chubox {
+  justify-content: center;
+}
+.chuthan22 {
+  margin: 40px 0px 0px 25px;
+}
+.madefor {
+  color: rgb(161, 162, 162);
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+.kel {
+  display: flex;
+
+  color: white;
+  font-size: 20px;
+}
+.showall {
+  float: right;
+  margin-left: 80%;
+  color: rgb(161, 162, 162);
+  font-size: 15px;
+  margin-top: 40px;
+}
+.box2than2 {
+  display: flex;
+  width: 100%;
+}
+.khoianh {
+  justify-content: center;
+  display: inline-block;
+}
+.khoianh img {
+  height: 100px;
+  width: 80%;
+  margin: 0px 10px 0px 25px;
+}
+.chukhoianh {
+  margin-left: 25px;
+}
+
 .than3 {
   width: 30%;
   height: 800px;
   background-color: rgb(73, 72, 70);
+  border-radius: 15px;
+  overflow: scroll;
+  scrollbar-width: none;
 }
-.tieude1 {
+
+.chuthan3 {
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.img {
+  margin: 20px 0px 20px 20px;
+}
+.chuthan32 {
+  font-size: 25px;
+  margin: 20px 0px 20px 20px;
+}
+.chuthan33 {
+  font-size: 15px;
+  color: gray;
+  margin: 20px 0px 20px 20px;
+}
+.ngang {
   display: flex;
-  gap: 15px;
 }
-.search {
-  justify-content: center;
-  text-align: center;
+.cuoitrang {
+  margin-bottom: 0;
+  bottom: 0;
+  padding: 30px;
 }
