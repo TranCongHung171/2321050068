@@ -6,43 +6,112 @@ header {
   width: 100%;
   height: 10vh;
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 75%;
+  margin: auto;
+}
+nav img {
+  width: 130px;
+  height: 80px;
+  margin: 0px 0px 0px -50px;
+}
 nav ul {
-  width: 70%;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 22px;
 }
 nav li {
-  margin-left: 0px;
-  padding: 20px;
+  padding: 0px;
+  margin: 0px 20px;
 }
-nav img {
-  width: 100px;
-  height: 100%;
-  margin-left: 120px;
-}
+
 nav select {
-  margin-left: 20px;
   color: white;
   background-color: black;
   border-color: black;
-  font-size: 25px;
+  font-size: 22px;
 }
 a {
   text-decoration: none;
   color: white;
 }
 
+.chucnang {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+.icon {
+  color: white;
+  font-size: 25px;
+}
+.muagoi {
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(239, 103, 18);
+}
+.log {
+  border: 2px solid rgb(181, 180, 195);
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: white;
+  background-color: rgb(38, 79, 115);
+}
+
 main {
-  width: 70%;
+  width: 75%;
   background-color: rgb(13, 14, 14);
-  height: 1000px;
+  height: 1000px; /*có height thì mới cuộn overflow được*/
   margin: auto;
   overflow: scroll;
   scrollbar-width: none;
 }
+.khoianhchay {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.anhchayngang {
+  display: flex;
+  width: calc(1320px * 4);
+  height: 600px;
+  gap: 10px;
+  animation: slide 10s infinite;
+} /* infinite: chạy từng phần
+linear infinite:chạy liên tục như băng chuyền*/
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-1320px);
+  }
+  40% {
+    transform: translateX(-2640px);
+  }
+  60% {
+    transform: translateX(-3960px);
+  }
+  80% {
+    transform: translateX(-5280px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 main img {
   width: 100%;
   margin-bottom: 20px;
@@ -124,22 +193,34 @@ main img {
   align-items: center;
   display: flex;
 }
+footer {
+  background-color: rgb(13, 13, 14);
+  width: 75%;
+  height: 500px;
+  margin: auto;
+}
 .foot {
   margin-top: 150px;
   color: white;
 }
 .foot1 {
   border-top: 2px solid #f1f1f2;
-
   display: flex;
-  gap: 120px;
+  gap: 90px;
   font-size: larger;
 }
 .foot1 img {
-  margin-top: 10px;
-  height: 40px;
-  width: 70px;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 120px;
   display: flex;
+  margin: 10px 100px 10px 0px;
+}
+.foot1 a {
+  text-decoration: none;
+
+  color: rgb(209, 207, 207);
 }
 .foot2 {
   border-top: 2px solid #f1f1f2;
