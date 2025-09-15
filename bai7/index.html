@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FPTPlay</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -19,15 +23,24 @@
             <li><a href="#">Phim bộ</a></li>
             <li><a href="#">V.League</a></li>
             <li><a href="#">Thiếu nhi</a></li>
-            <select name="Xemthem">
-              <option value="tructiep">Trực tiếp</option>
-              <option value="anime">Anime</option>
-              <option value="amnhac">Âm nhạc</option>
-              <option value="e-sport">E-sport</option>
-            </select>
+            <li>
+              <select name="Xemthem">
+                <option value="tructiep">Trực tiếp</option>
+                <option value="anime">Anime</option>
+                <option value="amnhac">Âm nhạc</option>
+                <option value="e-sport">E-sport</option>
+              </select>
+            </li>
           </ul>
         </nav>
-        <div class="chucnang"></div>
+        <div class="chucnang">
+          <div class="icon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="icon"><i class="fa fa-bell" aria-hidden="true"></i></div>
+          <div class="muagoi">Mua gói</div>
+          <div class="log">Đăng nhập</div>
+        </div>
       </div>
     </header>
 
@@ -35,7 +48,14 @@
       <div>
         <img src="/bai7/img/09_68bfea5810013f0001205210.jpg" />
       </div>
-      <div><img src="/bai7/img/640x396-muado.jpg" /></div>
+      <div class="khoianhchay">
+        <div class="anhchayngang">
+          <img src="/bai7/img/640x396-muado.jpg" />
+          <img src="/bai7/img/mua-do2-1122.jpeg" />
+          <img src="/bai7/img/mua-do2-1122.jpeg" />
+          <img src="/bai7/img/mua-do2-1122.jpeg" />
+        </div>
+      </div>
       <div><img src="/bai7/img/qc.jpg" /></div>
       <div>
         <p class="tieude">Cày film hay mỗi ngày</p>
@@ -382,6 +402,9 @@
           <div>Minion</div>
         </div>
       </div>
+    </main>
+
+    <footer>
       <div class="foot">
         <div class="foot1">
           <div>
@@ -390,31 +413,31 @@
             <img src="/bai7/img/logowebsite4x_1748221195181.png" />
           </div>
           <div>
-            <p>Về FPT Play</p>
-            <p>Giới thiệu</p>
-            <p>Các gói dịch vụ</p>
-            <p>Liên hệ</p>
-            <p>Trung tâm hỗ trợ</p>
-            <p>Thông tin</p>
+            <p><a href="#">Về FPT Play</a></p>
+            <p><a href="#">Giới thiệu</a></p>
+            <p><a href="#">Các gói dịch vụ</a></p>
+            <p><a href="#">Liên hệ</a></p>
+            <p><a href="#">Trung tâm hỗ trợ</a></p>
+            <p><a href="#">Thông tin</a></p>
           </div>
           <div>
-            <p>Dịch vụ</p>
-            <p>Gói DATA</p>
-            <p>Quảng cáo</p>
-            <p>Mua gói</p>
-            <p>Bảo hành</p>
+            <p><a href="#">Dịch vụ</a></p>
+            <p><a href="#">Gói DATA</a></p>
+            <p><a href="#">Quảng cáo</a></p>
+            <p><a href="#">Mua gói</a></p>
+            <p><a href="#">Bảo hành</a></p>
           </div>
           <div>
-            <p>Quy định</p>
-            <p>Điều khoản sử dụng</p>
-            <p>Chính sách thanh toán</p>
-            <p>Chính sách bảo mật thông tin dữ liệu</p>
-            <p>Cam kết của FPT Telecom</p>
+            <p><a href="#">Quy định</a></p>
+            <p><a href="#">Điều khoản sử dụng</a></p>
+            <p><a href="#">Chính sách thanh toán</a></p>
+            <p><a href="#">Chính sách bảo mật thông tin dữ liệu</a></p>
+            <p><a href="#">Cam kết của FPT Telecom</a></p>
           </div>
           <div>
-            <p>19006600</p>
-            <p>hotrofptplay@fpt.com</p>
-            <p>Theo dõi chúng tôi trên:</p>
+            <p><a href="#">19006600</a></p>
+            <p><a href="#">hotrofptplay@fpt.com</a></p>
+            <p><a href="#">Theo dõi chúng tôi trên:</a></p>
           </div>
         </div>
         <div class="foot2">
@@ -435,8 +458,6 @@
           </p>
         </div>
       </div>
-    </main>
-
-    <footer></footer>
+    </footer>
   </body>
 </html>
