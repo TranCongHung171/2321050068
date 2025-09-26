@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let donhang = {
+        madonhang: "1",
+        thongTinKhachHang: {
+          hoTen: "Tran Cong Hung",
+          soDT: "0911461015",
+          trangThaiThanhVien: true,
+        },
+        danhSachSanPham: {
+          sp1: {
+            maSanPham: "1",
+            tenSanPham: "ca phe",
+            soLuong: 10,
+            giaTien: 10000,
+          },
+          sp2: {
+            maSanPham: "2",
+            tenSanPham: "matcha",
+            soLuong: 2,
+            giaTien: 1000,
+          },
+          sp3: {
+            maSanPham: "3",
+            tenSanPham: "tra sua",
+            soLuong: 3,
+            giaTien: 6000,
+          },
+        },
+        trangThaiThanhToan: true,
+        diaChiGiaoHang: "Bac Tu Liem - Ha Noi",
+      };
+
+      document.writeln(
+        "Tổng cộng:",
+        donhang.danhSachSanPham.sp1.soLuong *
+          donhang.danhSachSanPham.sp1.giaTien +
+          donhang.danhSachSanPham.sp2.soLuong *
+            donhang.danhSachSanPham.sp2.giaTien +
+          donhang.danhSachSanPham.sp3.soLuong *
+            donhang.danhSachSanPham.sp3.giaTien +
+          "<br>"
+      );
+      document.writeln("-----------------------------" + "<br>");
+      //string
+      let hoTen = "Tran Cong Hung";
+      document.writeln(hoTen.length + "<br>");
+
+      let myString = "Hello Hung";
+      document.writeln(myString[0] + "<br>");
+      document.writeln(myString.slice(1, 4) + "<br>"); // trả kí tự có index 1->3
+      document.writeln(myString.replace("Hello", "Hi") + "<br>"); //thay thế
+      document.writeln(myString.toUpperCase() + "<br>"); // viết hoa
+      document.writeln(myString.indexOf("e") + "<br>"); // tìm kiếm ký tự đó, nếu có trả về vtri nó trong chuỗi
+      document.writeln(myString.includes("e") + "<br>"); // tìm kiếm ký tự đó, nếu có trả về true
+      document.writeln(myString.split("") + "<br>"); // tách chuỗi thành các mảng dựa vào " " trong split
+      document.writeln(myString.startsWith("Hung") + "<br>"); // kiểm tra true false kí tự bắt đầu
+
+      //NUMBER
+      document.writeln("--------------------------" + "<br>");
+      var pi = 3.14857865;
+      pi = pi.toFixed(2);
+      document.writeln(pi + "<br>");
+      document.writeln(isNaN(10) + "<br>"); //  is not a number kiểm tra truefalse là số hay ko
+      document.writeln(isNaN("10") + "<br>");
+      let toDay = new Date(); //let toDay = new Date(22-09-2023);
+      document.writeln(toDay + "<br>");
+      document.writeln(toDay.getFullYear() + "<br>"); //Lấy ra năm
+      document.writeln(toDay.getMonth() + 1 + "<br>"); //Lấy ra tháng chạy từ 0
+      document.writeln(toDay.getDate() + "<br>"); //lấy ra ngày
+      document.writeln(toDay.getDay() + 1 + "<br>"); //Lấy ra thứ chạy từ 0,CN là 0
+      document.writeln(toDay.getHours() + "<br>"); // Minutes, Seconds
+    </script>
+  </body>
+</html>
