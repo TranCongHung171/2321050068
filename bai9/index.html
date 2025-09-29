@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //MẢNG
+      let arr = [1, 2, 3, 4, "a", "b", "c", 2, 3];
+      let ten = "ten";
+      let thongTin = {
+        ten: ten,
+      };
+      document.writeln(typeof ten + "<br>");
+      document.writeln(typeof thongTin + "<br>");
+      document.writeln(Array.isArray(arr) + "<br>"); //true, kiểm tra arr có phải mảng không?
+      document.writeln(arr.length + "<br>"); //độ dài mảng
+      document.writeln(arr[2] + "<br>"); //lấy phần tử thứ i trong mảng
+      document.writeln(arr.indexOf(3) + "<br>"); //nếu có trả về vị trí đầu tiên của phần tử trong mảng, không có trả về -1
+      document.writeln(arr.lastIndexOf(3) + "<br>"); //nếu có trả về vị trí cuối cùng của phần tử trong mảng, không có trả về -1
+      arr[3] = 6; //thay đổi giá trị phần tử trong mảng
+      document.writeln(arr + "<br>");
+
+      let a, b, c, d;
+      a = [1, 2, 3];
+      b = "JavaScript";
+      c = [42, "JS"];
+      d = a.concat(b, c); //nối mảng
+      document.writeln(d + "<br>");
+      document.writeln(Array.isArray(d) + "<br>");
+      //   d = d.join("-"); //nối mảng thành chuỗi, các phần tử cách nhau bởi dấu "-"
+      //   document.writeln(Array.isArray(d) + "<br>");
+      //   document.writeln(d + "<br>");
+      d.pop(); //xóa phần tử cuối mảng
+      document.writeln(d + "<br>");
+      d.push("Hùng"); //thêm phần tử vào cuối mảng
+      document.writeln(d + "<br>");
+      d.reverse(); //đảo ngược mảng
+      document.writeln(d + "<br>");
+      d.shift(); //xóa phần tử đầu mảng
+      document.writeln(d + "<br>");
+      d.unshift("Hù"); //thêm phần tử vào đầu mảng
+      document.writeln(d + "<br>");
+
+      //If
+      let so = "10000000000002";
+      let socuoi = parseInt(so[so.length - 1]);
+      if (socuoi % 2 == 0) {
+        document.writeln("Số chẵn  <br>");
+      } else {
+        document.writeln("Số lẻ  <br>");
+      }
+      let now = new Date().getHours;
+      if (5 <= now < 10) {
+        document.writeln("Chào buổi sáng");
+      } else if (10 <= now < 13) {
+        document.writeln("Chào buổi sáng");
+      } else if (17 <= now < 22) {
+        document.writeln("Chào buổi tối");
+      } else {
+        document.writeln("Chào buổi đêm");
+      }
+      document.writeln("<br>--------------------------------<br>");
+      let x = 10;
+      let y = 9;
+      let z = 10;
+      let tong;
+      tong = 0.6 * x + 0.3 * y + 0.1 * z;
+
+      if (8 <= tong < 10) {
+        document.writeln("A");
+      } else if (7 <= tong < 8) {
+        document.writeln("B");
+      } else if (5 <= tong < 7) {
+        document.writeln("C");
+      } else if (4 <= tong < 5) {
+        document.writeln("D");
+      } else {
+        document.writeln("F");
+      }
+    </script>
+  </body>
+</html>
