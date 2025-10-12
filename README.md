@@ -20,4 +20,4 @@ Dự án này giúp người mới bắt đầu học **HTML, CSS, và JavaScrip
 1. Clone hoặc tải dự án về:
    
    bash
-   git clone https://github.com/<tên-tài-khoản>/<tên-dự-án>.git
+   git clone https://github.com/TranCongHung171/2321050068.git
