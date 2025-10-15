@@ -16,8 +16,6 @@ Dự án này giúp người mới bắt đầu học **HTML, CSS, và JavaScrip
   
 ---
 
-# Cách sử dụng
-1. Clone hoặc tải dự án về:
-   
-   bash
-   git clone https://github.com/TranCongHung171/2321050068.git
+# Cách sử dụng:
+Xem thêm trong file CONTRIBUTING.md
+# Cảm ơn mọi người đã ghé qua!
