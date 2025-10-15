@@ -43,12 +43,20 @@ Quy tắc:
 
 ## 3️⃣ Đóng góp mã (Code contribution)
 Nếu bạn muốn thêm tính năng, hiệu ứng hoặc công cụ hỗ trợ học:
-1. Fork repo này về tài khoản của bạn.  
-2. Tạo nhánh mới:
-
-   bash
-   git checkout -b feature/them-hieu-ung-hoac-chuc-nang
-
+1. Fork repository này.
+2. Clone về máy của bạn:
+   ```bash
+   git clone https://github.com/ten-ban/tetris-ai.git
+   cd tetris-ai
+3. Tạo nhánh mới cho tính năng hoặc sửa lỗi:
+   ```bash
+   git checkout -b feature/ten-tinh-nang
+4. Viết code, kiểm tra kỹ, và commit rõ ràng:
+   ```bash
+   git commit -m "Thêm tính năng xoay khối bằng phím R"
+5. Push lên GitHub và tạo Pull Request:
+   ```bash
+   git push origin feature/ten-tinh-nang
 ---
 
 Mọi đóng góp của bạn sẽ là hành trang kiến thức hữu ích giúp cho dự án phát triển hơn, tối ưu hóa code hơn và mang tính hiện thực hóa cho mọi người - đặc biệt là người mới, giúp họ phát triển, học tập, và có nhiều kiến thức để trở thành nhà lập trình viên.
