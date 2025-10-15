@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <script>
+      //để viết chú thích JS
+      document.writeln("Hello World <br>");
+      //   document.writeln("Hello World <br>");
+
+      let hoTen = "Tran Cong Hung";
+      document.writeln(hoTen + "<br>");
+      //hằng số
+      const pi = 3.14;
+
+      let soThuNhat = 10;
+      let soThuHai = 5;
+      let ketQua = 0;
+      //+
+      ketQua = soThuNhat + soThuHai;
+      document.writeln("Tổng: " + ketQua + "<br>");
+      //-
+      ketQua = soThuNhat - soThuHai;
+      document.writeln("Hiệu: " + ketQua + "<br>");
+      //*
+      ketQua = soThuNhat * soThuHai;
+      document.writeln("Tích: " + ketQua + "<br>");
+      // /
+      ketQua = soThuNhat / soThuHai;
+      document.writeln("Thương: " + ketQua + "<br>");
+      // %
+      ketQua = soThuNhat % soThuHai;
+      document.writeln("Chia lấy dư: " + ketQua + "<br>");
+      //++ -- như C++, ++x thì tăng trước rồi gán, x++ thì gán rồi tăng sau
+      document.writeln(ketQua++ + "<br>");
+      // += -= *= /=
+      soThuNhat += soThuHai;
+      document.writeln(soThuNhat + "<br>");
+      soThuNhat -= soThuHai;
+      document.writeln(soThuNhat + "<br>");
+
+      //toán tử so sánh: > < >= <= == != === !==
+      //   let soThuNhat = 10;
+      //   let soThuHai = "10";
+      //   document.writeln(soThuNhat == soThuHai + "<br>"); //true
+      //   document.writeln(soThuNhat === soThuHai + "<br>"); // false, == thì k qtam kdl chỉ qtam gtri, nhưng === thì 2 số phải cùng kdl
+      //   document.writeln(soThuNhat != soThuHai + "<br>"); // false
+      //   document.writeln(soThuNhat !== soThuHai + "<br>"); // true bằng nhau gtri nhưng khác kdl(10 số khác 10 string nên chúng khác nhau là đúng)
+      //   document.writeln(!(soThuNhat !== soThuHai + "<br>")); // false
+
+      //   let ketQua;
+      //   document.writeln(ketQua + "<br>"); //undefined
+
+      let thongtinSinhvien = {
+        hoTen: "Tran Cong Hung",
+        tuoi: 20,
+        gioiTinh: true,
+        lop: "HTTT",
+      };
+      document.writeln(
+        "Xin chào" +
+          thongtinSinhvien.hoTen +
+          " học lớp" +
+          thongtinSinhvien.lop +
+          "<br>"
+      );
+
+      let diaChiHung = {
+        tinh: "Ninh Bình",
+        huyen: "Hoa Lư",
+        xa: "Ninh Giang",
+      };
+
+      thongtinSinhvien.diaChi = diaChiHung;
+      let namNay = 2025;
+
+      document.writeln(
+        "Xin chào" +
+          thongtinSinhvien.hoTen +
+          " học lớp" +
+          thongtinSinhvien.lop +
+          " ở " +
+          diaChiHung.tinh +
+          " nam sinh " +
+          (namNay - thongtinSinhvien.tuoi) +
+          "<br>"
+      );
+
+      let soHai = "10";
+      soHai = parseInt(soHai); //ép kiểu
+      document.writeln(typeof soHai + "<br>");
+      let soBa = "10.5";
+      soBa = parseInt(soBa); //ép kiểu
+      document.writeln(soBa + "<br>");
+    </script>
+  </body>
+</html>
