@@ -81,5 +81,63 @@
         document.writeln("F");
       }
     </script>
+
+    <!--Mở rộng thêm trường hợp có thể tùy ý nhập điểm-->
+    <form action="">
+  		Điểm A: <input id="A" class="diemA" placeholder="Nhập điểm A"> <br>
+  		Điểm B: <input id="B" class="diemB" placeholder="Nhập điểm B"> <br>
+  		Điểm C: <input id="C" class="diemC" placeholder="Nhập điểm C"> <br>
+  		<button onclick="test()"> Xem kết quả </button>
+    </form>
+	  <script>
+  		function test() {
+  			let diemA = parseFloat(document.getElementById("A").value);
+  			let diemB = parseFloat(document.getElementById("B").value);
+  			let diemC = parseFloat(document.getElementById("C").value);
+  			tinhDiem(diemA, diemB, diemC)
+  		}
+  		function tinhDiem(diemA, diemB, diemC) {
+  			if ((diemA < 0 || diemA > 10)
+  				|| (diemB < 0 || diemB > 10)
+  				|| (diemC < 0 || diemC > 10)) {
+  				document.writeln("Điểm nhập vào bị sai - mời nhập lại");
+  			}
+  			else {
+  				let diem = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+  				document.writeln("Điểm A: " + diemA + "<br>");
+  				document.writeln("Điểm B: " + diemB + "<br>");
+  				document.writeln("Điểm C: " + diemC + "<br>");
+  				document.writeln("Điểm tổng: " + diem + "<br>");
+  
+  				if (diem >= 9 && diem <= 10) {
+  					document.writeln("Điểm chữ: A+");
+  				}
+  				else if (diem >= 8.5) {
+  					document.writeln("Điểm chữ: A");
+  				}
+  				else if (diem >= 8) {
+  					document.writeln("Điểm chữ: B+");
+  				}
+  				else if (diem >= 7) {
+  					document.writeln("Điểm chữ: B");
+  				}
+  				else if (diem >= 6.5) {
+  					document.writeln("Điểm chữ: C+");
+  				}
+  				else if (diem >= 5.5) {
+  					document.writeln("Điểm chữ: C");
+  				}
+  				else if (diem >= 5) {
+  					document.writeln("Điểm chữ: D+");
+  				}
+  				else if (diem >= 4) {
+  					document.writeln("Điểm chữ: D");
+  				}
+  				else {
+  					document.writeln("Điểm chữ: F");
+  				}
+  			}
+  		}
+  	</script>
   </body>
 </html>
