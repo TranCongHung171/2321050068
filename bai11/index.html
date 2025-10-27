@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      // function ina() {
+      //   let a = prompt("Nhập tên", "Ví dụ: TCH");
+      //   document.writeln("Tên bạn là:" + a);
+      // }
+      // ina();
+
+      // let so = parseInt(prompt("Nhập số:", "ví dụ: 1"));
+      // function inx(so) {
+      //   if (so > 0 || typeof so != "number") {
+      //     for (let i = 0; i < so; i++) {
+      //       document.writeln("xin chào");
+      //     }
+      //   } else {
+      //     document.writeln("Nhập lại");
+      //   }
+      // }
+      // inx(so);
+    </script> -->
+
+    <!-- <h1>Tính tổng</h1>
+    <div>
+      <p>Nhập số 1:</p>
+      <input type="number" id="so1" />
+    </div>
+    <div>
+      <p>Nhập số 2:</p>
+      <input type="number" id="so2" />
+    </div>
+    <div>
+      <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>Kết quả: <input type="number" id="ketQua" /></div>
+    <script>
+      function tinhTong() {
+        let sothunhat = parseFloat(document.getElementById("so1").value);
+        let sothuhai = parseFloat(document.getElementById("so2").value);
+        let canhBao = "";
+        if (!sothunhat) {
+          canhBao += "Vui lòng nhập số 1";
+        }
+        if (!sothuhai) {
+          canhBao += "Vui lòng nhập số 2";
+        }
+        if (canhBao) {
+          alert(canhBao);
+        }
+        let tong = sothunhat + sothuhai;
+        document.getElementById("ketQua").value = tong;
+      }
+    </script> -->
+    <!-- Tính điểm ABC-->
+    <h1>Tính tổng</h1>
+    <h3>Biết tổng = A*0.6 + B*0.3 +C*0.1</h3>
+    <div>
+      <p>Nhập điểm A:</p>
+      <input type="number" id="diema" />
+    </div>
+    <div>
+      <p>Nhập điểm B:</p>
+      <input type="number" id="diemb" />
+    </div>
+    <div>
+      <p>Nhập điểm C:</p>
+      <input type="number" id="diemc" />
+    </div>
+    <div>
+      <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>Kết quả: <input type="text" id="ketQua" /></div>
+
+    <script>
+      function diemchu(diemA, diemB, diemC) {
+        let tong;
+        if (
+          diemA < 0 ||
+          diemA > 10 ||
+          diemB < 0 ||
+          diemB > 10 ||
+          diemC < 0 ||
+          diemC > 10
+        ) {
+          document.writeln("sai rồi");
+        } else {
+          tong = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+          if (tong >= 9) {
+            return tong + " điểm A";
+          } else if (tong < 9 && tong >= 7) {
+            return tong + " điểm B";
+          } else if (tong < 7 && tong >= 5) {
+            return tong + " điểm C";
+          } else if (tong < 5 && tong >= 4) {
+            return tong + " điểm D";
+          } else if (tong < 4) {
+            return tong + " điểm F";
+          } else {
+            document.writeln("điểm tổng quá rồi, sai");
+          }
+        }
+      }
+
+      function tinhTong() {
+        let diemA = parseFloat(document.getElementById("diema").value);
+        let diemB = parseFloat(document.getElementById("diemb").value);
+        let diemC = parseFloat(document.getElementById("diemc").value);
+        let canhBao = "";
+        if (!diemA) {
+          canhBao += "Vui lòng nhập điểm A";
+        }
+        if (!diemB) {
+          canhBao += "Vui lòng nhập điểm B";
+        }
+        if (!diemC) {
+          canhBao += "Vui lòng nhập điểm C";
+        }
+        if (canhBao) {
+          alert(canhBao);
+        }
+        document.getElementById("ketQua").value = diemchu(diemA, diemB, diemC);
+      }
+    </script>
+  </body>
+</html>
