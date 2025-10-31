@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .to {
+      align-items: center;
+      background-color: rgb(219, 215, 215);
+      width: 400px;
+      height: 400px;
+      display: flex;
+    }
+    .tinh {
+      margin-top: 5px;
+    }
+    img {
+      height: 400px;
+      margin-left: 15px;
+    }
+  </style>
+  <body>
+    <div class="to">
+      <div>
+        <div>
+          <p>Nhập chiều cao</p>
+          <input type="number" id="cao" />
+        </div>
+        <div>
+          <p>Nhập cân nặng:</p>
+          <input type="number" id="nang" />
+        </div>
+        <div class="tinh">
+          <button onclick="tinh()">Tính:</button>
+        </div>
+        <div>
+          Kết quả:<br />
+          <input type="text" id="ketQua" />
+        </div>
+      </div>
+      <div><img src="" id="anh" /></div>
+    </div>
+    <script>
+      function tinh() {
+        let chieuCao = parseFloat(document.getElementById("cao").value);
+        let canNang = parseFloat(document.getElementById("nang").value);
+        ketQua.value = canNang / (chieuCao * chieuCao);
+        let canhBao;
+        if (!chieuCao || chieuCao <= 0) {
+          canhBao += "Vui lòng nhập chiều cao lại";
+        }
+        if (!canNang || canNang <= 0) {
+          canhBao += "Vui lòng nhập cân nặng lại";
+        }
+        if (canhBao) {
+          alert(canhBao);
+          return;
+        }
+        if (ketQua.value > 40) {
+          anh.src = "bpn.jpg";
+        } else if (ketQua.value >= 30 && ketQua.value <= 39.9) {
+          anh.src = "bp12.jpg";
+        } else if (ketQua.value >= 25 && ketQua.value <= 29.9) {
+          anh.src = "tc.jpg";
+        } else if (ketQua.value >= 18.5 && ketQua.value <= 24.9) {
+          anh.src = "bt.jpg";
+        } else if (ketQua.value < 18.5) {
+          anh.src = "thieu.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
