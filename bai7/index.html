@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="script1.js"></script>
   </head>
   <body>
     <header>
@@ -16,7 +17,10 @@
         <nav>
           <ul>
             <li>
-              <img src="/bai7/img/logowebsite4x_1748221195181.png" alt="" />
+              <img
+                src="/2321050068/bai7/img/logowebsite4x_1748221195181.png"
+                alt=""
+              />
             </li>
             <li><a href="#">Trang chủ</a></li>
             <li><a href="#">Truyền hình</a></li>
@@ -30,6 +34,19 @@
                 <option value="amnhac">Âm nhạc</option>
                 <option value="e-sport">E-sport</option>
               </select>
+              <!-- có thể dùng select or input -->
+              <!-- <input list="xemthem" placeholder="Xem thêm">
+                <datalist id="xemthem">
+                  <option value="tructiep"></option>
+                  <option value="anime"></option>
+                  <option value="amnhac"></option>
+                  <option value="e-sport"></option>
+                  <option value="e-sport"></option>
+                  <option value="e-sport"></option>
+                  <option value="e-sport"></option>
+                  <option value="e-sport"></option>
+                </datalist>
+              </input> -->
             </li>
           </ul>
         </nav>
@@ -46,67 +63,67 @@
 
     <main>
       <div>
-        <img src="/bai7/img/09_68bfea5810013f0001205210.jpg" />
+        <img src="/2321050068/bai7/img/09_68bfea5810013f0001205210.jpg" />
       </div>
       <div class="khoianhchay">
         <div class="anhchayngang">
-          <img src="/bai7/img/640x396-muado.jpg" />
-          <img src="/bai7/img/mua-do2-1122.jpeg" />
-          <img src="/bai7/img/mua-do2-1122.jpeg" />
-          <img src="/bai7/img/mua-do2-1122.jpeg" />
+          <img id="anhx" src="/2321050068/bai7/img/640x396-muado.jpg" />
+          <!-- <img src="/2321050068/bai7/img/mua-do2-1122.jpeg" /> -->
+          <!-- <img src="/2321050068/bai7/img/mua-do2-1122.jpeg" />
+          <img src="/2321050068/bai7/img/mua-do2-1122.jpeg" /> -->
         </div>
       </div>
-      <div><img src="/bai7/img/qc.jpg" /></div>
+      <div><img src="/2321050068/bai7/img/qc.jpg" /></div>
       <div>
         <p class="tieude">Cày film hay mỗi ngày</p>
       </div>
       <div class="khoi1">
-        <div>
-          <img src="/bai7/img/phim/beautyandthebeaets.jpg" />
+        <div onclick="chonFilm(1)">
+          <img src="/2321050068/bai7/img/phim/beautyandthebeaets.jpg" />
           <div>Beauty and Beast</div>
         </div>
-        <div>
-          <img src="/bai7/img/phim/bongdungtrungso.jpg" />
+        <div onclick="chonFilm(2)">
+          <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
           <div>Bông đừng trúng số</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cam.jpg" />
+          <img src="/2321050068/bai7/img/phim/cam.jpg" />
           <div>Cám</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cogiaoemlaso1.jpg" />
+          <img src="/2321050068/bai7/img/phim/cogiaoemlaso1.jpg" />
           <div>Cô giáo em là số 1</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/conan.jpg" />
+          <img src="/2321050068/bai7/img/phim/conan.jpg" />
           <div>Conan</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/deptraithaysaisai.jpg" />
+          <img src="/2321050068/bai7/img/phim/deptraithaysaisai.jpg" />
           <div>Đẹp trai thấy sai sai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/johnwi.jpg" />
+          <img src="/2321050068/bai7/img/phim/johnwi.jpg" />
           <div>Johnwi</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/keanhon.jpg" />
+          <img src="/2321050068/bai7/img/phim/keanhon.jpg" />
           <div>Kệ anh on</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/kungfupanda.jpg" />
+          <img src="/2321050068/bai7/img/phim/kungfupanda.jpg" />
           <div>Kungfu Panda</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/mai.jpg" />
+          <img src="/2321050068/bai7/img/phim/mai.jpg" />
           <div>Mai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/matbiec.jpg" />
+          <img src="/2321050068/bai7/img/phim/matbiec.jpg" />
           <div>Mắt biếc</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/minion.jpg" />
+          <img src="/2321050068/bai7/img/phim/minion.jpg" />
           <div>Minion</div>
         </div>
       </div>
@@ -116,51 +133,51 @@
       </div>
       <div class="khoi2">
         <div>
-          <img src="/bai7/img/phim/beautyandthebeaets.jpg" />
+          <img src="/2321050068/bai7/img/phim/beautyandthebeaets.jpg" />
           <div>Beauty and Beast</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/bongdungtrungso.jpg" />
+          <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
           <div>Bông đừng trúng số</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cam.jpg" />
+          <img src="/2321050068/bai7/img/phim/cam.jpg" />
           <div>Cám</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cogiaoemlaso1.jpg" />
+          <img src="/2321050068/bai7/img/phim/cogiaoemlaso1.jpg" />
           <div>Cô giáo em là số 1</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/conan.jpg" />
+          <img src="/2321050068/bai7/img/phim/conan.jpg" />
           <div>Conan</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/deptraithaysaisai.jpg" />
+          <img src="/2321050068/bai7/img/phim/deptraithaysaisai.jpg" />
           <div>Đẹp trai thấy sai sai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/johnwi.jpg" />
+          <img src="/2321050068/bai7/img/phim/johnwi.jpg" />
           <div>Johnwi</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/keanhon.jpg" />
+          <img src="/2321050068/bai7/img/phim/keanhon.jpg" />
           <div>Kệ anh on</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/kungfupanda.jpg" />
+          <img src="/2321050068/bai7/img/phim/kungfupanda.jpg" />
           <div>Kungfu Panda</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/mai.jpg" />
+          <img src="/2321050068/bai7/img/phim/mai.jpg" />
           <div>Mai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/matbiec.jpg" />
+          <img src="/2321050068/bai7/img/phim/matbiec.jpg" />
           <div>Mắt biếc</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/minion.jpg" />
+          <img src="/2321050068/bai7/img/phim/minion.jpg" />
           <div>Minion</div>
         </div>
       </div>
@@ -170,51 +187,51 @@
       </div>
       <div class="khoi3">
         <div>
-          <img src="/bai7/img/phim/beautyandthebeaets.jpg" />
+          <img src="/2321050068/bai7/img/phim/beautyandthebeaets.jpg" />
           <div>Beauty and Beast</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/bongdungtrungso.jpg" />
+          <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
           <div>Bông đừng trúng số</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cam.jpg" />
+          <img src="/2321050068/bai7/img/phim/cam.jpg" />
           <div>Cám</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cogiaoemlaso1.jpg" />
+          <img src="/2321050068/bai7/img/phim/cogiaoemlaso1.jpg" />
           <div>Cô giáo em là số 1</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/conan.jpg" />
+          <img src="/2321050068/bai7/img/phim/conan.jpg" />
           <div>Conan</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/deptraithaysaisai.jpg" />
+          <img src="/2321050068/bai7/img/phim/deptraithaysaisai.jpg" />
           <div>Đẹp trai thấy sai sai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/johnwi.jpg" />
+          <img src="/2321050068/bai7/img/phim/johnwi.jpg" />
           <div>Johnwi</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/keanhon.jpg" />
+          <img src="/2321050068/bai7/img/phim/keanhon.jpg" />
           <div>Kệ anh on</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/kungfupanda.jpg" />
+          <img src="/2321050068/bai7/img/phim/kungfupanda.jpg" />
           <div>Kungfu Panda</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/mai.jpg" />
+          <img src="/2321050068/bai7/img/phim/mai.jpg" />
           <div>Mai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/matbiec.jpg" />
+          <img src="/2321050068/bai7/img/phim/matbiec.jpg" />
           <div>Mắt biếc</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/minion.jpg" />
+          <img src="/2321050068/bai7/img/phim/minion.jpg" />
           <div>Minion</div>
         </div>
       </div>
@@ -224,51 +241,51 @@
       </div>
       <div class="khoi1">
         <div>
-          <img src="/bai7/img/phim/beautyandthebeaets.jpg" />
+          <img src="/2321050068/bai7/img/phim/beautyandthebeaets.jpg" />
           <div>Beauty and Beast</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/bongdungtrungso.jpg" />
+          <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
           <div>Bông đừng trúng số</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cam.jpg" />
+          <img src="/2321050068/bai7/img/phim/cam.jpg" />
           <div>Cám</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cogiaoemlaso1.jpg" />
+          <img src="/2321050068/bai7/img/phim/cogiaoemlaso1.jpg" />
           <div>Cô giáo em là số 1</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/conan.jpg" />
+          <img src="/2321050068/bai7/img/phim/conan.jpg" />
           <div>Conan</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/deptraithaysaisai.jpg" />
+          <img src="/2321050068/bai7/img/phim/deptraithaysaisai.jpg" />
           <div>Đẹp trai thấy sai sai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/johnwi.jpg" />
+          <img src="/2321050068/bai7/img/phim/johnwi.jpg" />
           <div>Johnwi</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/keanhon.jpg" />
+          <img src="/2321050068/bai7/img/phim/keanhon.jpg" />
           <div>Kệ anh on</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/kungfupanda.jpg" />
+          <img src="/2321050068/bai7/img/phim/kungfupanda.jpg" />
           <div>Kungfu Panda</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/mai.jpg" />
+          <img src="/2321050068/bai7/img/phim/mai.jpg" />
           <div>Mai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/matbiec.jpg" />
+          <img src="/2321050068/bai7/img/phim/matbiec.jpg" />
           <div>Mắt biếc</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/minion.jpg" />
+          <img src="/2321050068/bai7/img/phim/minion.jpg" />
           <div>Minion</div>
         </div>
       </div>
@@ -278,51 +295,51 @@
       </div>
       <div class="khoi1">
         <div>
-          <img src="/bai7/img/phim/beautyandthebeaets.jpg" />
+          <img src="/2321050068/bai7/img/phim/beautyandthebeaets.jpg" />
           <div>Beauty and Beast</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/bongdungtrungso.jpg" />
+          <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
           <div>Bông đừng trúng số</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cam.jpg" />
+          <img src="/2321050068/bai7/img/phim/cam.jpg" />
           <div>Cám</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cogiaoemlaso1.jpg" />
+          <img src="/2321050068/bai7/img/phim/cogiaoemlaso1.jpg" />
           <div>Cô giáo em là số 1</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/conan.jpg" />
+          <img src="/2321050068/bai7/img/phim/conan.jpg" />
           <div>Conan</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/deptraithaysaisai.jpg" />
+          <img src="/2321050068/bai7/img/phim/deptraithaysaisai.jpg" />
           <div>Đẹp trai thấy sai sai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/johnwi.jpg" />
+          <img src="/2321050068/bai7/img/phim/johnwi.jpg" />
           <div>Johnwi</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/keanhon.jpg" />
+          <img src="/2321050068/bai7/img/phim/keanhon.jpg" />
           <div>Kệ anh on</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/kungfupanda.jpg" />
+          <img src="/2321050068/bai7/img/phim/kungfupanda.jpg" />
           <div>Kungfu Panda</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/mai.jpg" />
+          <img src="/2321050068/bai7/img/phim/mai.jpg" />
           <div>Mai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/matbiec.jpg" />
+          <img src="/2321050068/bai7/img/phim/matbiec.jpg" />
           <div>Mắt biếc</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/minion.jpg" />
+          <img src="/2321050068/bai7/img/phim/minion.jpg" />
           <div>Minion</div>
         </div>
       </div>
@@ -354,51 +371,51 @@
       </div>
       <div class="khoi1">
         <div>
-          <img src="/bai7/img/phim/beautyandthebeaets.jpg" />
+          <img src="/2321050068/bai7/img/phim/beautyandthebeaets.jpg" />
           <div>Beauty and Beast</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/bongdungtrungso.jpg" />
+          <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
           <div>Bông đừng trúng số</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cam.jpg" />
+          <img src="/2321050068/bai7/img/phim/cam.jpg" />
           <div>Cám</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/cogiaoemlaso1.jpg" />
+          <img src="/2321050068/bai7/img/phim/cogiaoemlaso1.jpg" />
           <div>Cô giáo em là số 1</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/conan.jpg" />
+          <img src="/2321050068/bai7/img/phim/conan.jpg" />
           <div>Conan</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/deptraithaysaisai.jpg" />
+          <img src="/2321050068/bai7/img/phim/deptraithaysaisai.jpg" />
           <div>Đẹp trai thấy sai sai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/johnwi.jpg" />
+          <img src="/2321050068/bai7/img/phim/johnwi.jpg" />
           <div>Johnwi</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/keanhon.jpg" />
+          <img src="/2321050068/bai7/img/phim/keanhon.jpg" />
           <div>Kệ anh on</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/kungfupanda.jpg" />
+          <img src="/2321050068/bai7/img/phim/kungfupanda.jpg" />
           <div>Kungfu Panda</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/mai.jpg" />
+          <img src="/2321050068/bai7/img/phim/mai.jpg" />
           <div>Mai</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/matbiec.jpg" />
+          <img src="/2321050068/bai7/img/phim/matbiec.jpg" />
           <div>Mắt biếc</div>
         </div>
         <div>
-          <img src="/bai7/img/phim/minion.jpg" />
+          <img src="/2321050068/bai7/img/phim/minion.jpg" />
           <div>Minion</div>
         </div>
       </div>
@@ -408,9 +425,9 @@
       <div class="foot">
         <div class="foot1">
           <div>
-            <img src="/bai7/img/logowebsite4x_1748221195181.png" />
-            <img src="/bai7/img/logowebsite4x_1748221195181.png" />
-            <img src="/bai7/img/logowebsite4x_1748221195181.png" />
+            <img src="/2321050068/bai7/img/logowebsite4x_1748221195181.png" />
+            <img src="/2321050068/bai7/img/logowebsite4x_1748221195181.png" />
+            <img src="/2321050068/bai7/img/logowebsite4x_1748221195181.png" />
           </div>
           <div>
             <p><a href="#">Về FPT Play</a></p>
