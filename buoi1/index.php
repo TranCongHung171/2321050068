@@ -98,6 +98,48 @@
     #xóa
     unset($mang[4]);
     print_r($mang) . "<br>";
+
+    #sxep mảng
+    $mang = ["C", "B", "D", "A"];
+    print_r($mang) . "<br>";
+    sort($mang); //sx tăng dần
+    print_r($mang) . "<br>";
+    rsort($mang); //sx giảm dần
+    print_r($mang) . "<br>";
+
+    #string to array
+    $ten = "Dung, Kien, Hao, Minh, Phuong, Nam"; // học thêm
+
+    //11 Kiểm tra xem biến có tồntại không: isset(), empty()
+    $bienA = "hello";
+    isset($bienA) . "<br>"; // true
+    isset($bienB) . "<br>"; // false 
+    if(isset($bienB)) {
+        echo "biến này có tồn tại <br>";
+    } else {
+        echo "biến này không tồn tại <br>";
+    }
+
+    //check empty
+    $check = "";
+    if(empty($check)) {
+        echo "empty <br>";
+    } else {
+        echo "no empty <br>";
+    }
+    //12. Hàm
+    # ko tham số
+    function xinChao () {
+        return "Hello";
+    }
+    echo xinChao() . "<br>";
+    
+    #có tham số
+    function xinChao2($ten) {   
+        return "Hello " . $ten;
+    }
+    echo xinChao2("Hùng") . "<br>";
+
     ?>
 </body>
 </html>
