@@ -1,9 +1,12 @@
 <?php
-    //session: lưu ở server
-    #thông tin đăng nhập, giỏ hàng, ... tt qtr cần bảo mật
+     //cookie: lưu ở client: máy chủ ng dùng
+    # lưu ở phía ng dùng
+    # dùng cho những thông tin k quan trọng
+
+    
     $cookieName = "user";
     $cookieValue = "CongHung";
-    //86400 = 30 ngay
+    //86400 = 30 ngay, /: tồn tại ở toàn bộ trang web
     setcookie($cookieName, $cookieValue, time() + (86400), "/");
     if(isset($_COOKIE[$cookieName])) {
         echo "cookie đã tồn tại " . $cookieName . " da duoc tao. Gia tri: " . $_COOKIE[$cookieName];
@@ -12,9 +15,8 @@
     }
 
 
-    //cookie: lưu ở client: máy chủ ng dùng
-    # lưu ở phía ng dùng
-    # dùng cho những thông tin k quan trọng
+    //session: lưu ở server
+    #thông tin đăng nhập, giỏ hàng, ... tt qtr cần bảo mật
     session_start();
     $_SESSION['name'] = "CongHung 123";
     echo "<br> Session da duoc tao. Gia tri: " . $_SESSION['name'];
