@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 //$port = 3306;
-$database = "film_fptplay";
+$database = "quan_ly_web_phim";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
