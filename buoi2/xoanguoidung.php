@@ -1,7 +1,7 @@
 <?php
 include("connect.php");
-$id = $GET['id']; 
+$id = $_GET['id']; 
 $sql = "DELETE FROM nguoi_dung WHERE id = $id";
 mysqli_query($conn, $sql);
-header("Location: index.php?page_layout=nguoidung");
+header("Location: tong.php?page_layout=nguoidung");
 ?>
