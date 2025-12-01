@@ -39,7 +39,7 @@
             // đăng nhập thành công
             session_start();
             $_SESSION['username'] = $tenDangNhap;
-            header("Location: trangchu.php");
+            header("Location: tong.php");
         } else {
             echo '<p class="warning"> Đăng nhập thất bại</p>';  
         }
