@@ -59,34 +59,55 @@
             //echo "Xin chào " . $_SESSION['username'];
             switch ($_GET['page_layout']) {
                 case 'trangchu': 
-                    include 'trangchu.php';
+                    include 'trangchu/trangchu.php';
                     break;
                 case 'quocgia': 
-                    include 'quocgia.php';
+                    include 'quocgia/quocgia.php';
                     break;
                 case 'phim': 
-                    include 'phim.php';
+                    include 'phim/phim.php';
                     break;
                 case 'theloai': 
-                    include 'theloai.php';
+                    include 'theloai/theloai.php';
                     break;
                 case 'nguoidung': 
-                    include 'nguoidung.php';
+                    include 'nguoidung/nguoidung.php';
                     break;    
                 case 'dangxuat':
                     include 'login.php';
                     session_unset();
-                    sesqsion_destroy();
+                    session_destroy();
                     
                     header("Location: login.php");
                     break;
                 case 'themnguoidung':
-                    include 'themnguoidung.php';
+                    include 'nguoidung/themnguoidung.php';
                     break;
                 case 'capnhatnguoidung':
-                    include 'capnhatnguoidung.php';
+                    include 'nguoidung/capnhatnguoidung.php';
                     break;
+                case 'themphim':
+                    include 'phim/themphim.php';
+                    break;
+                case 'capnhatphim':
+                    include 'phim/capnhatphim.php';
+                    break; 
+                case 'themtheloai':
+                    include 'theloai/themtheloai.php';  
+                    break;
+                case 'capnhattheloai':
+                    include 'theloai/capnhattheloai.php';  
+                    break;
+                case 'themquocgia':
+                    include 'quocgia/themquocgia.php';
+                    break;
+                case 'capnhatquocgia':
+                    include 'quocgia/capnhatquocgia.php';
+                    break;
+                       
             }
+        } else {
+            include 'trangchu/trangchu.php';
         }
         ?>
     </header>
