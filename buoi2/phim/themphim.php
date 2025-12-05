@@ -11,7 +11,7 @@
        !empty($_POST['mota'])) {
 
             $u = $_POST['username'];
-            $tl = $_POST['the-loai'];
+            
             $d = $_POST['dao-dien'];
             $n = $_POST['namphathanh'];
             $p = $_POST['poster'];
@@ -19,8 +19,9 @@
             $s = $_POST['sotap'];
             $t = $_POST['trailer'];
             $m = $_POST['mota'];
-            $sql = "INSERT INTO phim (ten_phim, the_loai_id, dao_dien_id, nam_phat_hanh, poster, quoc_gia_id, so_tap, trailer, mo_ta) 
-                    VALUES ('$u', $tl, '$d', '$n', '$p', '$qg', '$s', '$t', '$m')";
+            $tl = $_POST['the-loai'];
+            $sql = "INSERT INTO phim (ten_phim, dao_dien_id, nam_phat_hanh, poster, quoc_gia_id, so_tap, trailer, mo_ta, the_loai_id) 
+                    VALUES ('$u', '$d', '$n', '$p', '$qg', '$s', '$t', '$m', '$tl')";
             //echo $sql;
             mysqli_query($conn, $sql);
             mysqli_close($conn);

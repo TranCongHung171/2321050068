@@ -30,7 +30,7 @@
     <table border="1">
         <tr>
             <th>Tên phim</th>
-            <th>Thể loại</th>
+            
             <th>Đạo diễn</th>
             <th>Năm phát hành</th>
             <th>Poster</th>
@@ -38,18 +38,20 @@
             <th>Số tập</th>
             <th>Trailer</th>
             <th>Mô tả</th>
+            <th>Thể loại</th>
             <th>Chức năng</th>
+            
 
         </tr>
         <?php 
         include ('connect.php');
-        $sql = "SELECT p.*, q.ten_quoc_gia, nd.ho_ten, t.ten_the_loai FROM phim p JOIN quoc_gia q ON p.quoc_gia_id = q.id JOIN nguoi_dung nd ON p.dao_dien_id = nd.id JOIN phim_the_loai pt ON p.id = pt.phim_id JOIN the_loai t ON pt.the_loai_id = t.id";
+        $sql = "SELECT p.*, q.ten_quoc_gia, nd.ho_ten, t.ten_the_loai FROM phim p JOIN quoc_gia q ON p.quoc_gia_id = q.id JOIN nguoi_dung nd ON p.dao_dien_id = nd.id JOIN the_loai t ON p.the_loai_id = t.id";
         $result = mysqli_query($conn, $sql);
         while($row = mysqli_fetch_array($result)) {
         ?>
         <tr>
             <td><?php echo $row["ten_phim"] ?></td>
-            <td><?php echo $row["ten_the_loai"] ?></td>
+            
             <td><?php echo $row["ho_ten"] ?></td>
             <td><?php echo $row["nam_phat_hanh"] ?></td>
             <td><?php echo $row["poster"] ?></td>
@@ -57,6 +59,7 @@
             <td><?php echo $row["so_tap"] ?></td>
             <td><?php echo $row["trailer"] ?></td>
             <td><?php echo $row["mo_ta"] ?></td>
+            <td><?php echo $row["ten_the_loai"] ?></td>
             <td>
                 <a class="xoa" href="tong.php?page_layout=capnhatphim&id=<?php echo $row["id"] ?>">Sửa</a>
                 <a class="xoa" href="xoaphim.php?id=<?php echo $row["id"] ?>">Xóa</a>

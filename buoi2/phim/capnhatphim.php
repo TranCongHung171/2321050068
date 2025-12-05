@@ -7,7 +7,8 @@
        !empty($_POST['quoc-gia']) &&
        !empty($_POST['sotap']) &&
        !empty($_POST['trailer']) &&
-       !empty($_POST['mota'])) {
+       !empty($_POST['mota']) &&
+       !empty($_POST['the-loai'])) {
             $id = $_GET['id'];
             $u = $_POST['username'];
             $d = $_POST['dao-dien'];
@@ -17,6 +18,7 @@
             $s = $_POST['sotap'];
             $t = $_POST['trailer'];
             $m = $_POST['mota'];
+            $tl = $_POST['the-loai'];
             $sql = "UPDATE phim SET 
                     ten_phim = '$u',
                     dao_dien_id = '$d',
@@ -25,7 +27,8 @@
                     quoc_gia_id = '$qg',
                     so_tap = '$s',
                     trailer = '$t',
-                    mo_ta = '$m'
+                    mo_ta = '$m',
+                    the_loai_id = '$tl'
                     WHERE id= $id";
             //echo $sql;
             mysqli_query($conn, $sql);
@@ -115,6 +118,22 @@
             <div>
                 <p>Mô tả </p>
                 <textarea name="mota" placeholder="Mô tả phim"><?php echo $phim['mo_ta'] ?></textarea>
+            </div>
+            <div>
+                <p> Thể loại </p>
+                <!-- <input type="text" name="quocgia" placeholder="ghi id quốc gia" value="<?php echo $phim['quoc_gia_id'] ?>"> -->
+                 <select name="the-loai">
+                    <?php
+                        include ('connect.php');
+                        $sql = "SELECT * FROM the_loai";
+                        $result = mysqli_query($conn, $sql);
+                        while($tl = mysqli_fetch_assoc($result)) {
+                    ?>
+                        <option value="<?php echo $tl['id'] ?>" <?php echo ($phim['the_loai_id'] == $tl['id']) ? 'selected' : ""; ?>><?php echo $tl['ten_the_loai'] ?></option>
+                    <?php
+                    }
+                    ?>
+                </select>
             </div>
            
             <div><input type="submit" value="Cập nhật"></div>
