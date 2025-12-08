@@ -17,6 +17,21 @@
       </div>
 
       <div>
+        <p><b>họ và tên</b></p>
+        <input
+          style="
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            background: transparent;
+          "
+          type="text"
+          name="hovaten"
+          placeholder="Nhập họ và tên"
+        />
+      </div>
+      <!-- the name: viet lien khong dau -->
+      <div>
         <p><b>Mã số sinh viên</b></p>
         <input
           type="text"
@@ -42,7 +57,7 @@
         <input
           type="tel"
           name="sdt"
-          placeholder="Dạng số: 09xxxxxxxx"
+          placeholder="Dạng số: 0-1-23456789"
           pattern="([0]{1}(-[3,4,8,9]{1})(-[0-9]{8}))"
           required
         />
@@ -104,6 +119,15 @@
       </div>
     </form>
 
+    <form>
+      <div>
+        <p><b>Mật khẩu:</b></p>
+        <input type="password" name="matkhau" />
+        <input type="submit" />
+        <input type="reset" />
+      </div>
+    </form>
+
     <iframe
       width="560"
       height="315"
@@ -128,6 +152,7 @@
     </div>
 
     <div>Thẻ &lt;h1>&lt;/h1> để viết tiêu đề</div>
+
     <!--
     dấu cách:&nbsp
      <:&lt;

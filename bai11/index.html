@@ -26,7 +26,7 @@
       // inx(so);
     </script> -->
 
-    <!-- <h1>Tính tổng</h1>
+    <h1>Tính tổng</h1>
     <div>
       <p>Nhập số 1:</p>
       <input type="number" id="so1" />
@@ -36,14 +36,27 @@
       <input type="number" id="so2" />
     </div>
     <div>
-      <button onclick="tinhTong()">Tính tổng</button>
+      <button onclick="tinhTong('cong')">Tính tổng</button>
     </div>
-    <div>Kết quả: <input type="number" id="ketQua" /></div>
+
+    <div>
+      <button onclick="tinhTong('tru')">Tính hiệu</button>
+    </div>
+
+    <div>
+      <button onclick="tinhTong('nhan')">Tính tích</button>
+    </div>
+
+    <div>
+      <button onclick="tinhTong('chia')">Tính thương</button>
+    </div>
+    <div>Kết quả tính: <input type="number" id="ketQua" /></div>
     <script>
-      function tinhTong() {
+      function tinhTong(phepTinh) {
         let sothunhat = parseFloat(document.getElementById("so1").value);
         let sothuhai = parseFloat(document.getElementById("so2").value);
         let canhBao = "";
+        let ketQua = 0;
         if (!sothunhat) {
           canhBao += "Vui lòng nhập số 1";
         }
@@ -53,12 +66,21 @@
         if (canhBao) {
           alert(canhBao);
         }
-        let tong = sothunhat + sothuhai;
-        document.getElementById("ketQua").value = tong;
+        if ((ketQua = "cong")) {
+          ketQua = sothunhat + sothuhai;
+        } else if ((ketQua = "tru")) {
+          ketQua = sothunhat - sothuhai;
+        } else if ((ketQua = "nhan")) {
+          ketQua = sothunhat * sothuhai;
+        } else if ((ketQua = "chia")) {
+          ketQua = sothunhat / sothuhai;
+        } else {
+          document.getElementById("ketQua").value = ketQua;
+        }
       }
-    </script> -->
+    </script>
     <!-- Tính điểm ABC-->
-    <h1>Tính tổng</h1>
+    <!-- <h1>Tính tổng</h1>
     <h3>Biết tổng = A*0.6 + B*0.3 +C*0.1</h3>
     <div>
       <p>Nhập điểm A:</p>
@@ -126,6 +148,6 @@
         }
         document.getElementById("ketQua").value = diemchu(diemA, diemB, diemC);
       }
-    </script>
+    </script> -->
   </body>
 </html>

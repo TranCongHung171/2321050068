@@ -6,7 +6,7 @@ nav {
   background-color: #0c4ca3;
   /*padding: 10px;*/
 }
-ul {
+.ul1 {
   display: flex;
   list-style: none;
   /*gap: 20px;*/
@@ -42,7 +42,7 @@ header {
 }
 
 .tintuc {
-  max-width: 1200px;
+  width: 75%;
   margin: 0 auto; /*can ra giua = vs anh header*/
   padding: 20px;
 }
@@ -56,19 +56,21 @@ header {
 
 .tieude1 {
   text-decoration: none;
+  border-bottom: 3px solid black;
 }
 .xemthem {
   font-size: 15px;
   float: right;
   text-decoration: none;
   color: gray;
-  margin: 0 0 10px 0;
+  margin: 0px 0px 10px 0px;
 }
 .danhsachtintuc {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-  /*grid... tao bo cuc cho cac cot, gap:cach nhau*/
+  /*grid... tao bo cuc cho cac cot, gap:cach nhau
+  có thể dùng display:flex sau đó chỉnh width img và width li=260px, cách này sẽ dài hơn*/
 }
 .tintuc1 img {
   width: 100%;
@@ -205,14 +207,16 @@ header {
   color: white;
   border-right: #a29f9f dotted 1px;
 }
+.chutrang {
+  width: 100%;
+  border-bottom: #a29f9f dotted 1px;
+}
 .chutrang a {
   color: white;
   font-size: 20px;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   text-decoration: none;
-  border-bottom: #a29f9f dotted 1px;
-  width: 100%;
 }
 .ytb {
   justify-content: center;

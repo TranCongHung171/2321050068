@@ -4,76 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .to {
+        background-color: rgb(238, 164, 251);
+        width: 400px;
+        height: 400px;
+      }
+      .to12 {
+        display: flex;
+        background-color: rgb(243, 221, 242);
+      }
+      .to1 {
+        margin-left: 10px;
+        margin-top: 30px;
+        width: 50%;
+      }
+      h1 {
+        text-align: center;
+      }
+      input,
+      button {
+        border-radius: 3px;
+        border: none;
+      }
+
+      button {
+        margin: 15px 0px;
+        background-color: rgb(179, 131, 225);
+        color: rgb(248, 248, 248);
+      }
+      img {
+        height: 333px;
+        margin-left: 10px;
+        width: 171px;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .to {
-      align-items: center;
-      background-color: rgb(219, 215, 215);
-      width: 400px;
-      height: 400px;
-      display: flex;
-    }
-    .tinh {
-      margin-top: 5px;
-    }
-    img {
-      height: 400px;
-      margin-left: 15px;
-    }
-  </style>
+
   <body>
     <div class="to">
-      <div>
-        <div>
-          <p>Nhập chiều cao</p>
-          <input type="number" id="cao" />
+      <h1>TÍNH CHỈ SỐ BMI</h1>
+      <div class="to12">
+        <div class="to1">
+          <div>
+            <p>Nhập chiều cao:</p>
+            <input type="number" placeholder="Chiều cao (m)" id="cao" />
+          </div>
+          <div>
+            <p>Nhập cân nặng:</p>
+            <input type="number" placeholder="Cân nặng (Kg)" id="nang" />
+          </div>
+          <div class="tinh">
+            <button onclick="tinh()">Tính:</button>
+          </div>
+          <div>
+            Kết quả:
+            <input type="number" id="ketQua" readonly />
+          </div>
         </div>
-        <div>
-          <p>Nhập cân nặng:</p>
-          <input type="number" id="nang" />
-        </div>
-        <div class="tinh">
-          <button onclick="tinh()">Tính:</button>
-        </div>
-        <div>
-          Kết quả:<br />
-          <input type="text" id="ketQua" />
-        </div>
+        <div><img id="anh" /></div>
       </div>
-      <div><img src="" id="anh" /></div>
     </div>
     <script>
       function tinh() {
         let chieuCao = parseFloat(document.getElementById("cao").value);
         let canNang = parseFloat(document.getElementById("nang").value);
-        ketQua.value = canNang / (chieuCao * chieuCao);
-        let canhBao;
+        let kq = canNang / (chieuCao * chieuCao);
+        let kqlamtron = kq.toFixed(1);
+        document.getElementById("ketQua").value = kqlamtron;
+        let a = document.getElementById("anh");
+        let canhBao = "";
+
         if (!chieuCao || chieuCao <= 0) {
-          canhBao += "Vui lòng nhập chiều cao lại";
+          canhBao += "Vui lòng nhập chiều cao lại!";
         }
         if (!canNang || canNang <= 0) {
-          canhBao += "Vui lòng nhập cân nặng lại";
+          canhBao += "Vui lòng nhập cân nặng lại!";
         }
         if (canhBao) {
           alert(canhBao);
           return;
         }
-        if (ketQua.value > 40) {
-          anh.src = "bpn.jpg";
-        } else if (ketQua.value >= 30 && ketQua.value <= 39.9) {
+
+        if (kqlamtron > 40) {
+          a.src = "bpn.jpg";
+        } else if (kqlamtron >= 30 && kqlamtron <= 39.9) {
           anh.src = "bp12.jpg";
-        } else if (ketQua.value >= 25 && ketQua.value <= 29.9) {
-          anh.src = "tc.jpg";
-        } else if (ketQua.value >= 18.5 && ketQua.value <= 24.9) {
-          anh.src = "bt.jpg";
-        } else if (ketQua.value < 18.5) {
-          anh.src = "thieu.jpg";
+        } else if (kqlamtron >= 25 && kqlamtron <= 29.9) {
+          a.src = "tc.jpg";
+        } else if (kqlamtron >= 18.5 && kqlamtron <= 24.9) {
+          a.src = "bt.jpg";
+        } else if (kqlamtron < 18.5) {
+          a.src = "thieu.jpg";
         }
       }
     </script>

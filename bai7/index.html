@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="script1.js"></script>
   </head>
   <body>
     <header>
@@ -67,10 +66,59 @@
       </div>
       <div class="khoianhchay">
         <div class="anhchayngang">
-          <img id="anhx" src="/2321050068/bai7/img/640x396-muado.jpg" />
+          <img src="/2321050068/bai7/img/640x396-muado.jpg" id="anhto" />
           <!-- <img src="/2321050068/bai7/img/mua-do2-1122.jpeg" /> -->
           <!-- <img src="/2321050068/bai7/img/mua-do2-1122.jpeg" />
           <img src="/2321050068/bai7/img/mua-do2-1122.jpeg" /> -->
+        </div>
+        <div
+          class="texttrenanh"
+          style="width: 100%; border: none; background: rgba(33, 33, 33, 0.6)"
+        >
+          <div style="margin-left: 15px; margin-bottom: 20px">
+            <div>
+              <h1 id="tenPhim">Tên Film: Mưa đỏ</h1>
+            </div>
+            <div style="display: flex; margin-top: -25px; text-align: center">
+              <h1
+                style="
+                  font-size: 20px;
+                  background-color: rgb(226, 157, 89);
+                  border-radius: 3px;
+                  padding: 5px;
+                "
+              >
+                <a href="#" id="linkxem">Xem ngay</a>
+              </h1>
+              <h1
+                style="
+                  margin-left: 10px;
+                  font-size: 20px;
+                  background-color: brown;
+                  border-radius: 3px;
+                  padding: 5px;
+                "
+              >
+                <a onclick="xemTrailer()" href="#" id="linktrailer"
+                  >Trailer
+                  <i class="fa fa-caret-square-o-right" aria-hidden="true"></i
+                ></a>
+              </h1>
+            </div>
+            <div style="display: flex; gap: 20px; font-size: 20px">
+              <li style="list-style: none; margin-right: 10px" id="namPhatHanh">
+                NămPH:
+              </li>
+              <li style="margin-right: 10px" id="tuoi">Tuổi: 16+</li>
+              <li style="margin-right: 10px" id="thoiLuong">Thời lượng: 2</li>
+              <li style="margin-right: 10px" id="quocGia">
+                Quốc gia: Việt Nam
+              </li>
+              <li style="margin-right: 10px" id="theLoai">
+                Thể loại: Phim chiếu rạp
+              </li>
+            </div>
+          </div>
         </div>
       </div>
       <div><img src="/2321050068/bai7/img/qc.jpg" /></div>
@@ -84,45 +132,45 @@
         </div>
         <div onclick="chonFilm(2)">
           <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
-          <div>Bông đừng trúng số</div>
+          <div>Bỗng dưng trúng số</div>
         </div>
-        <div>
+        <div onclick="chonFilm(3)">
           <img src="/2321050068/bai7/img/phim/cam.jpg" />
           <div>Cám</div>
         </div>
-        <div>
+        <div onclick="chonFilm(4)">
           <img src="/2321050068/bai7/img/phim/cogiaoemlaso1.jpg" />
           <div>Cô giáo em là số 1</div>
         </div>
-        <div>
+        <div onclick="chonFilm(5)">
           <img src="/2321050068/bai7/img/phim/conan.jpg" />
           <div>Conan</div>
         </div>
-        <div>
+        <div onclick="chonFilm(6)">
           <img src="/2321050068/bai7/img/phim/deptraithaysaisai.jpg" />
           <div>Đẹp trai thấy sai sai</div>
         </div>
-        <div>
+        <div onclick="chonFilm(7)">
           <img src="/2321050068/bai7/img/phim/johnwi.jpg" />
-          <div>Johnwi</div>
+          <div>Johnwick</div>
         </div>
-        <div>
+        <div onclick="chonFilm(8)">
           <img src="/2321050068/bai7/img/phim/keanhon.jpg" />
-          <div>Kệ anh on</div>
+          <div>Kẻ ăn hồn</div>
         </div>
-        <div>
+        <div onclick="chonFilm(9)">
           <img src="/2321050068/bai7/img/phim/kungfupanda.jpg" />
           <div>Kungfu Panda</div>
         </div>
-        <div>
+        <div onclick="chonFilm(10)">
           <img src="/2321050068/bai7/img/phim/mai.jpg" />
           <div>Mai</div>
         </div>
-        <div>
+        <div onclick="chonFilm(11)">
           <img src="/2321050068/bai7/img/phim/matbiec.jpg" />
           <div>Mắt biếc</div>
         </div>
-        <div>
+        <div onclick="chonFilm(12)">
           <img src="/2321050068/bai7/img/phim/minion.jpg" />
           <div>Minion</div>
         </div>
@@ -132,13 +180,13 @@
         <p class="tieude">Mới ra mắt</p>
       </div>
       <div class="khoi2">
-        <div>
+        <div onclick="chonFilm(1)">
           <img src="/2321050068/bai7/img/phim/beautyandthebeaets.jpg" />
           <div>Beauty and Beast</div>
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
-          <div>Bông đừng trúng số</div>
+          <div>Bỗng dưng trúng số</div>
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/cam.jpg" />
@@ -192,7 +240,7 @@
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
-          <div>Bông đừng trúng số</div>
+          <div>Bỗng dưng trúng số</div>
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/cam.jpg" />
@@ -246,7 +294,7 @@
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
-          <div>Bông đừng trúng số</div>
+          <div>Bỗng dưng trúng số</div>
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/cam.jpg" />
@@ -300,7 +348,7 @@
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
-          <div>Bông đừng trúng số</div>
+          <div>Bỗng dưng trúng số</div>
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/cam.jpg" />
@@ -376,7 +424,7 @@
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/bongdungtrungso.jpg" />
-          <div>Bông đừng trúng số</div>
+          <div>Bỗng dưng trúng số</div>
         </div>
         <div>
           <img src="/2321050068/bai7/img/phim/cam.jpg" />
@@ -476,5 +524,6 @@
         </div>
       </div>
     </footer>
+    <script src="script1.js"></script>
   </body>
 </html>

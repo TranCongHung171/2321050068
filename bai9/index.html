@@ -65,20 +65,23 @@
       document.writeln("<br>--------------------------------<br>");
       let x = 10;
       let y = 9;
-      let z = 10;
+      let z = 100;
       let tong;
       tong = 0.6 * x + 0.3 * y + 0.1 * z;
-
-      if (8 <= tong < 10) {
-        document.writeln("A");
-      } else if (7 <= tong < 8) {
-        document.writeln("B");
-      } else if (5 <= tong < 7) {
-        document.writeln("C");
-      } else if (4 <= tong < 5) {
-        document.writeln("D");
+      if (x < 0 || x > 10 || y < 0 || y > 10 || z < 0 || z > 10) {
+        document.writeln("Error. Nhap lai!");
       } else {
-        document.writeln("F");
+        if (8 <= tong < 10) {
+          document.writeln("A");
+        } else if (7 <= tong < 8) {
+          document.writeln("B");
+        } else if (5 <= tong < 7) {
+          document.writeln("C");
+        } else if (4 <= tong < 5) {
+          document.writeln("D");
+        } else {
+          document.writeln("F");
+        }
       }
     </script>
   </body>
